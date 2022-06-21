@@ -1,0 +1,95 @@
+/************************************************************************************************************* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+}
+
+/******************************************************************************************************************** HEADER */
+header{
+    background-color: rgb(38, 10, 110);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #f2f2f2;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*********************************************************************************************************** GENERAL SECTION */
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+section .container {
+    margin: 100px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-card {
+    margin-right: 15px;
+    background:  rgb(38, 10, 110);
+    text-align: center;
+    padding: 20px;
+}
+
+.text-card h2 {
+    font-size: 30px;
+}
+ 
+.text-card p {
+    font-size: 20px;
+}
+
+/************************************************************************************************************** ABOUT US */
+/* nemá zatím žádné styly */
+
+/************************************************************************************************************** TEAM */
+
+.team {
+    background:  rgb(16, 4, 45);
+    color: white;
+}
+
+/* ***************************************************************************************************************SCROLL EFEKT */
+.reveal{
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all linear 0.5s;
+}
+/* při změně směru stačí přepnout osu X na Y */
+
+/* je tu daný kvůlu JS, vyvoláváme JS */
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all linear 0.5s;
+}
+
+/* hraji si */
+/*  
